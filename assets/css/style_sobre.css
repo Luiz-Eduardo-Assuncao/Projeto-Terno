@@ -1,0 +1,16 @@
+.titulo-sobre{
+    font-size: 5rem;
+    font-weight: bolder;
+    font-family: Tahoma;
+    color: #424242; 
+    text-align: center;
+}
+
+.sobre{
+    margin: 10px;
+    padding: 20px;
+    font-size: 2rem;
+    color: #424242; 
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+}

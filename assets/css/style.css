@@ -12,7 +12,6 @@ body{
 header{
 
     background-color: #424242;
-    font-family:fantasy
 }
 
 
@@ -22,7 +21,7 @@ header{
 
 *{
     margin: 0;
-    padding: 0;
+    padding: 600;
 }
 
 .menu{
@@ -47,7 +46,7 @@ header{
     text-decoration: none;
     color: #bcbcbc;
     font-size: 1.7rem;
-    font-family:grammar-error;
+    font-family:Tahoma;
 }
 
 .menu_itens a:hover{
@@ -63,10 +62,71 @@ header{
     background-color: #424242;
     
     font-size: 1rem;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Tahoma;
     padding: 10px 5px;
     color: #bcbcbc;
 }
 #nome{
     margin-top: 30px;
+}
+
+.slider {
+    display: block;
+    height: 293px;
+    width: 600px;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+}
+
+.slider li {
+    list-style: none;
+    position: absolute;
+}
+
+.slider img {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    vertical-align: top;
+}
+
+
+.slider input {
+    display: none;
+}
+
+.slider label {
+    background-color: #000;
+    bottom: 10px;
+    cursor: pointer;
+    display: block;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    z-index: 10;
+}
+
+.slider li:nth-child(1) label {
+    left: 10px;
+}
+
+.slider li:nth-child(2) label {
+    left: 40px;
+}
+
+.slider li:nth-child(3) label {
+    left: 70px;
+}
+
+
+.slider img {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.slider li input:checked ~ img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
 }
